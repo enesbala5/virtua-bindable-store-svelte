@@ -116,7 +116,7 @@ export type VirtualStore = {
   $getStartSpacerSize(): number;
   $getTotalSize(): number;
   _flushJump(): [number, boolean];
-  $subscribe(target: number, cb: Subscriber): () => void;
+  $subscribe(target: number, cb: Subscribe2r): () => void;
   $update(...action: Actions): void;
   _hasUnmeasuredItemsInFrozenRange(): boolean;
 };
